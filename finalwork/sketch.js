@@ -12,6 +12,7 @@ function setup(){
     let theta = TWO_PI * i / 12;
     let x = windowWidth/2 + cos(theta) * windowWidth/8;
     let y = windowHeight/2 + sin(theta) * windowWidth/8;
+//　星のアニメーション
     count = (count + 0.01) % cycle;
     if(count < 10){
       size = count + 10;
@@ -23,9 +24,11 @@ function setup(){
     fill(255, 204, 100);
     star(x, y, size);
   }
+// 質問を表示
   if(keyIsDown("Q".charCodeAt(0))){
     questionballon("この旗は何を意味しますか？", 100 , 100 , 255, 0)
 }
+// 答えを表示　
   if(keyIsDown("A".charCodeAt(0))){
     answerballon("この旗は欧州旗、つまりEUの旗を意味します！！", 100, 450 , 255, "red")
   }
