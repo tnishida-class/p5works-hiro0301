@@ -30,7 +30,7 @@ function setup(){
 }
 // 答えを表示　
   if(keyIsDown("A".charCodeAt(0))){
-    answerballon("この旗は欧州旗、つまりEUの旗を意味します！！", 100, 450 , 255, "red")
+    answerballon("この旗は欧州旗、つまりEUの旗を意味します！！", 100, 300 , 255, "red")
   }
 }
 
